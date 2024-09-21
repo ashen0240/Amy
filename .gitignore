@@ -1,0 +1,50 @@
+# Ignore compiled class files
+*.class
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# Ignore log files
+*.log
+
+# Ignore temporary files created by IDEs or OS
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Ignore directories
+bin/
+target/
+out/
+build/
+
+# VS Code specific
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# Eclipse IDE specific
+*.tmp
+*.bak
+*.swp
+*.swo
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA specific
+.idea/
+*.iml
+*.iws
+out/
+
+# NetBeans specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/

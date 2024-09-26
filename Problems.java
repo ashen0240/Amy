@@ -2,33 +2,49 @@ import java.util.Scanner;
 
 public class Problems {
   public static void main(String[] args) {
-    /*1. 
-    Write a program that prints all the numbers from 1 to 100. For multiples of 3, print "Fizz" instead of the number, and for multiples of 5, print "Buzz". For numbers that are multiples of both 3 and 5, print "FizzBuzz".
-
-2. Create a program that asks the user to input a number and prints whether the number is even or odd. Then, if the number is odd print the next multiple of 10. For example, if the number is 63 print 70.
-
-    */
-    
-    int ab = 0;
-      for(ab = 0; ab<=100; ab++){
-      System.out.println(ab);
-
-        if(ab%3 == 0){
-          System.out.println("Fizz");
-          }
-
-        if(ab%5 == 0){
-          System.out.println("Buzz");
-
-        }
-        if(ab%15 == 0){
-          System.out.println("FizzBuzz");
-        }
-      }
-
-  
-  }
+    // 1. Make an array with the numbers 1-100
+    int[] numbers = new int [100];
+    int[] ted = {6,2,9,1,0,100,0,3};
+    System.out.println("  ");
+    System.out.println(numbers);
+    System.out.println(numbers[99]);
+    for(int amy = 1; amy<=100; amy++){
+      numbers[amy-1] = amy;
     }
+    for(int h: numbers){
+        System.out.println(h);
+    }
+
+    for(int j = 0; j<= 99; j++){
+      System.out.println(numbers[j]);
+    }
+
+    System.out.println(ted[1]);
+    // 2. Loop through the array with the following conditions UNTIL 10 prime number are found:
+    // If the number is prime, print the word "Prime" instead of the number.
+    // If the number is a multiple of 4, print the word "Quad" instead of the number.
+    // If the number is a multiple of 6, print the word "Hex" instead of the number.
+    // If the number is both a multiple of 4 and 6 (i.e., a multiple of 12), print "QuadHex" instead of the number.
+    // If the number is both prime and a multiple of 4 or 6, still print "Prime" and quad or hex or both.
+    // If the number does not meet any of the above conditions, just print the number itself.
+    // 3. After 10 prime numbers are found, print the number itself
+
+    for(int l: numbers){
+      if (isPrime(l)){
+        System.out.println(l);
+      }
+    }
+  }
+
+  public static boolean isPrime (int num){
+    for(int i = 2; i <= num/2; i++){
+      if(num % i == 0){
+        return false;
+      }
+    }
+    return true;
+  }
+}
 
 
 

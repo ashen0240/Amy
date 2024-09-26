@@ -173,5 +173,13 @@ public class Notes {
     String asdfhjlkhasd = "s";
     System.out.println(asdfhjlkhasd.length());
     //https://www.w3schools.com/java/java_ref_string.asp
+
+    //For each loops can serve the same function as regular for loops, but for each loops only work on arrays
+    //Arrays start at a 0th term and then go to 1st, 2nd, etc.
+    
+    int [] arrayarray = {8,7,6,5,4,3,2,1};
+    for(int e: arrayarray){
+      System.out.println(e);
+    }
   }
 }

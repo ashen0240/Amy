@@ -5,5 +5,6 @@ public class Main {
     Notes.main(args);
     System.out.println("\n\nProblems.java\n\n");
     Problems.main(args);
+    System.out.println("test");
   }
 }

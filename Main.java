@@ -4,6 +4,6 @@ public class Main {
     System.out.println("\n\nNotes.java\n\n");
     Notes.main(args);
     System.out.println("\n\nProblems.java\n\n");
-    Problems.main(args);
+    QuadHex.main(args);
   }
 }

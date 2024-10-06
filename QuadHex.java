@@ -1,4 +1,4 @@
-public class Problems {
+public class QuadHex {
   public static void main(String[] args) {
     // 1. Make an array with the numbers 1-100
     int[] numbers = new int [100];

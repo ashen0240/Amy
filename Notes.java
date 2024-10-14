@@ -181,5 +181,19 @@ public class Notes {
     for(int e: arrayarray){
       System.out.println(e);
     }
+    int[][] arr = new int[3][4];
+    int[][] ay = { {1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12} };
+
+    for(int[] jim: arr){
+      for(int rat = 0; rat < jim.length; rat++){
+        jim[rat] = 1;
+      }
+    }
+    for(int[] jat: arr){
+      for(int mat = 0; mat < jat.length; mat++){
+        System.out.print(jat[mat] + " ");
+      }
+      System.out.println(" ");
+    }
   }
 }
